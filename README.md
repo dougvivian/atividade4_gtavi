@@ -23,4 +23,7 @@ Landing page desenvolvida para a atividade 4 e 5 do curso +praTi com o tema: Reg
 ├── script.js
 ├── style.css
 ├── gtaimg2.JPG
+├── print1.JPG
+├── print2.JPG
 └── README.md
+

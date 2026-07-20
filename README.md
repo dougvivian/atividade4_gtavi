@@ -1,4 +1,4 @@
-# Pré-Venda GTA VI - Atividade 4
+# Pré-Venda GTA VI - Atividade 4 e 5 +praTi
 
 Landing page desenvolvida para a atividade 4 e 5 do curso +praTi com o tema: Registro de interesse na pré-venda do jogo Grand Theft Auto VI (GTA VI) no Brasil. O projeto integra conceitos de HTML5, CSS3, JavaScript assíncrono e controle de versão com Git.
 

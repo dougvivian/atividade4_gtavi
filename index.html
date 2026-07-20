@@ -9,71 +9,48 @@
   <body>
 
     <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
-          <span class="logo">GTA <span class="logo-accent">VI</span></span>
-          <p class="tagline">
-            Registre-se aqui para adquirir o Grand Theft Auto VI (pré-venda) no
-            Brasil
-          </p>
-        </div>
+  <div class="container">
+    <span class="logo">GTA <span class="logo-accent">VI</span></span>
+    <p class="tagline">Registre-se aqui para adquirir o Grand Theft Auto VI (pré-venda) no Brasil</p>
+  </div>
+</header>
+
+<main class="container">
+  <!-- seção principal-->
+  <section class="hero">
+    <h1>A ESPERA ESTÁ QUASE ACABANDO</h1>
+    <p>Garanta sua cópia na pré-venda exclusiva para o Brasil.</p>
+    <button class="btn-cta" id="btnInscrever">Garantir na Pré-Venda</button>
+  </section>
+
+  <!-- parte do formulário-->
+  <section class="cadastro-section">
+    <h2>Preencha seus dados</h2>
+    
+    <form id="formCadastro">
+      <div class="form-group">
+        <label>Nome Completo</label>
+        <input type="text" id="nome">
       </div>
-    </header>
 
-    <main class="container">
-      <section class="hero">
-        <h1>A ESPERA ESTÁ QUASE ACABANDO</h1>
-        <p>
-          Garanta sua cópia na pré-venda exclusiva para o Brasil e receba bônus
-          no dia do lançamento.
-        </p>
-        <button class="btn-cta" id="btnInscrever">Garantir na Pré-Venda</button>
-      </section>
+      <div class="form-group">
+        <label>E-mail</label>
+        <input type="email" id="email">
+      </div>
 
-      <section class="cadastro-section">
-        <h2>Preencha seus dados para a Pré-Venda</h2>
+      <div class="form-group">
+        <label>CEP</label>
+        <input type="text" id="cep">
+      </div>
 
-        <form id="formCadastro" class="form-cadastro">
-          <div class="form-group">
-            <label for="nome">Nome Completo</label>
-            <input type="text" id="nome" required placeholder="Seu nome aqui" />
-          </div>
+      <div class="form-group">
+        <label>Cidade</label>
+        <input type="text" id="cidade">
+      </div>
 
-          <div class="form-group">
-            <label for="email">E-mail</label>
-            <input
-              type="email"
-              id="email"
-              required
-              placeholder="seu@email.com"
-            />
-          </div>
-
-          <!-- Campo de CEP que vai acionar a API -->
-          <div class="form-group">
-            <label for="cep">CEP</label>
-            <input
-              type="text"
-              id="cep"
-              maxlength="8"
-              required
-              placeholder="Apenas números (ex: 01001000)"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="cidade">Cidade</label>
-            <input
-              type="text"
-              id="cidade"
-              readonly
-              placeholder="Preenchido pelo CEP"
-            />
-          </div>
-
-          <button type="submit" class="btn-enviar">Finalizar Cadastro</button>
-        </form>
-      </section>
-    </main>
+      <button type="submit" class="btn-enviar">Finalizar Cadastro</button>
+    </form>
+  </section>
+</main>
   </body>
 </html>

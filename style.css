@@ -44,7 +44,7 @@ body {
 }
 
 .tagline {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: var(--text-dim);
   margin-top: 4px;
 }
@@ -89,4 +89,66 @@ body {
 .btn-cta:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(0, 229, 209, 0.4);
+}
+
+.cadastro-section {
+  max-width: 500px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cadastro-section h2 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--pink); /* Destacando o título em rosa */
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  background: #1c1435; /* Um roxo um pouco mais claro que o fundo */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  color: var(--text);
+  border-radius: 4px;
+  font-family: var(--font-body);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--pink); /* Brilho rosa ao focar no campo */
+}
+
+.btn-enviar {
+  width: 100%;
+  background: var(--pink);
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-family: var(--font-body);
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.btn-enviar:hover {
+  background: #e0247f;
 }

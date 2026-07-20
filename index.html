@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Site</title>
+    <title> Pre Venda GTA VI </title>
   </head>
   <body>
-    
+
     <header class="site-header">
       <div class="container header-inner">
         <div class="brand">
@@ -28,6 +28,51 @@
           no dia do lançamento.
         </p>
         <button class="btn-cta" id="btnInscrever">Garantir na Pré-Venda</button>
+      </section>
+
+      <section class="cadastro-section">
+        <h2>Preencha seus dados para a Pré-Venda</h2>
+
+        <form id="formCadastro" class="form-cadastro">
+          <div class="form-group">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" required placeholder="Seu nome aqui" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="seu@email.com"
+            />
+          </div>
+
+          <!-- Campo de CEP que vai acionar a API -->
+          <div class="form-group">
+            <label for="cep">CEP</label>
+            <input
+              type="text"
+              id="cep"
+              maxlength="8"
+              required
+              placeholder="Apenas números (ex: 01001000)"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="cidade">Cidade</label>
+            <input
+              type="text"
+              id="cidade"
+              readonly
+              placeholder="Preenchido pelo CEP"
+            />
+          </div>
+
+          <button type="submit" class="btn-enviar">Finalizar Cadastro</button>
+        </form>
       </section>
     </main>
   </body>

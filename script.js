@@ -39,3 +39,12 @@ form.addEventListener('submit', (evento) => {
 
     alert(`Cadastro realizado com sucesso!\n\nUsuário: ${nome}\nRua: ${rua}\nCidade: ${cidade}`)
 })
+
+//evento ao clicar no botao saiba mais
+let botaoSaibaMais = document.querySelector('#botao-saiba-mais')
+botaoSaibaMais.addEventListener('click', () => {
+    let secaoInfos = document.querySelector('.infos-jogo') // buscar pela classe com ponto
+    secaoInfos.scrollIntoView({
+        behavior: 'smooth' //efeito de rolagem que achei interessante
+    })
+})

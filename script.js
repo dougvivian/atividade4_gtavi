@@ -29,15 +29,14 @@ campoCep.addEventListener('blur', async () => {
     }
 })
 
-// evento para finalizar e dar o alerta
+// evento para finalizar e exibir a mensagem de agradecimento
 form.addEventListener('submit', (evento) => {
     evento.preventDefault()
 
     let nome = document.querySelector('#nome').value
-    let rua = document.querySelector('#logradouro').value
-    let cidade = document.querySelector('#cidade').value
 
-    alert(`Cadastro realizado com sucesso!\n\nUsuário: ${nome}\nRua: ${rua}\nCidade: ${cidade}`)
+    alert(`Obrigado pelo contato, ${nome}! Seu cadastro para a pré-venda do GTA VI foi realizado com sucesso.`);
+    form.reset(); // limpa o formulário após o sucesso
 })
 
 //evento ao clicar no botao saiba mais

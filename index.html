@@ -4,53 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title> Pre Venda GTA VI </title>
+    <title>Pre Venda GTA VI</title>
   </head>
   <body>
-
     <header class="site-header">
-  <div class="container">
-    <span class="logo">GTA <span class="logo-accent">VI</span></span>
-    <p class="tagline">Registre-se aqui para adquirir o Grand Theft Auto VI (pré-venda) no Brasil</p>
-  </div>
-</header>
-
-<main class="container">
-  <!-- seção principal-->
-  <section class="hero">
-    <h1>A ESPERA ESTÁ QUASE ACABANDO</h1>
-    <p>Garanta sua cópia na pré-venda exclusiva para o Brasil.</p>
-    <button class="btn-cta" id="btnInscrever">Garantir na Pré-Venda</button>
-  </section>
-
-  <!-- parte do formulário-->
-  <section class="cadastro-section">
-    <h2>Preencha seus dados</h2>
-    
-    <form id="formCadastro">
-      <div class="form-group">
-        <label>Nome Completo</label>
-        <input type="text" id="nome">
+      <div class="container">
+        <span class="logo">GTA <span class="logo-accent">VI</span></span>
+        <p class="tagline">
+          Registre-se aqui para adquirir o Grand Theft Auto VI (pré-venda) no
+          Brasil
+        </p>
       </div>
+    </header>
 
-      <div class="form-group">
-        <label>E-mail</label>
-        <input type="email" id="email">
-      </div>
+    <main class="container">
+      <!-- seção principal-->
+      <section class="principal">
+        <h1>A ESPERA ESTÁ QUASE ACABANDO</h1>
+        <p>Garanta sua cópia na pré-venda exclusiva para o Brasil.</p>
+        <button class="btn-cta" id="botao-saiba-mais">Saiba Mais</button>
+      </section>
 
-      <div class="form-group">
-        <label>CEP</label>
-        <input type="text" id="cep">
-      </div>
+      <!-- parte do formulário-->
+      <section class="cadastro-section">
+        <h2>Preencha seus dados</h2>
 
-      <div class="form-group">
-        <label>Cidade</label>
-        <input type="text" id="cidade">
-      </div>
+        <form id="formCadastro">
+          <div class="form-group">
+            <label>Nome Completo</label>
+            <input type="text" id="nome" />
+          </div>
 
-      <button type="submit" class="btn-enviar">Finalizar Cadastro</button>
-    </form>
-  </section>
-</main>
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" id="email" />
+          </div>
+
+          <div class="form-group">
+            <label>CEP</label>
+            <input type="text" id="cep" />
+          </div>
+
+          <div class="form-group">
+            <label>Cidade</label>
+            <input type="text" id="cidade" />
+          </div>
+
+          <button type="submit" class="btn-enviar">Finalizar Cadastro</button>
+        </form>
+      </section>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>
